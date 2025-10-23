@@ -24,9 +24,9 @@ url: 'https://ik.imagekit.io/d58le6owhr/IMG_20250715_165752320_HDR_AE.jpg?update
 alt: ''},
 {id: '2',
 url: 'https://raw-coral-sdkhy7q3hc.edgeone.app/IMG_20251010_233308386_HDR.jpg',
-alt: ''
-
-},
+alt: ''},
+{id: '3',url: 'https://ready-cyan-l7bvwuwsud.edgeone.app/IMG_20251011_215442868_HDR.jpg',
+alt: ''},
 ];
 
 const MOCK_PROJECTS = [

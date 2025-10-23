@@ -29,7 +29,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        const recipientEmail = "mohammadsahilbhat.contact@email.com"; // Your receiving email address
+        const recipientEmail = "mohammadsahilbhat360@email.com"; // Your receiving email address
         const subject = encodeURIComponent(`Portfolio Contact: Message from ${name}`);
         const body = encodeURIComponent(
             `Name: ${name}\n` +
