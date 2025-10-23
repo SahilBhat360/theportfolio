@@ -1,0 +1,90 @@
+// This file simulates a backend API service.
+// The data is hardcoded here for demonstration purposes.
+
+// Simulate network delay
+const sleep = (data, delay = 500) => {
+    return new Promise(resolve => setTimeout(() => resolve(data), delay));
+}
+
+// Mock Data - In a real app, this would come from a database.
+// The content is easily updatable here, simulating a backend API/JSON file.
+const MOCK_PROFILE = {
+    name: "Mohammad Sahil Bhat",
+    bio: "I am a student of Electrical Engineering at IIT ISM Dhanbad.",
+    profilePictureUrl: "https://ik.imagekit.io/d58le6owhr/IMG_20251020_212511436_AE~2.jpg?updatedAt=1761237097766",
+};
+
+// As requested, no default photos are added. The backend can populate this array.
+const MOCK_GALLERY_IMAGES = [
+    // Example of how to add an image:
+    // { id: '1', url: 'https://picsum.photos/seed/gallery1/800/600', alt: 'A beautiful landscape' },
+       {
+id: '1',
+url: 'https://ik.imagekit.io/d58le6owhr/IMG_20250715_165752320_HDR_AE.jpg?updatedAt=1761238532878',
+alt: ''},
+{id: '2',
+url: 'https://raw-coral-sdkhy7q3hc.edgeone.app/IMG_20251010_233308386_HDR.jpg',
+alt: ''
+
+},
+];
+
+const MOCK_PROJECTS = [
+    {
+        id: '1',
+        title: 'Cleaning My Room ',
+        description: 'It takes me 1 hour straight to clean my hostel room ',
+        imageUrl: 'https://insufficient-harlequin-3qt85ujchp.edgeone.app/bed.jpg',
+    },
+    
+    // Add more projects here as needed by editing this "backend" file.
+];
+
+const MOCK_SKILLS = [
+    { id: '1', name: 'Duplicating' },
+    { id: '2', name: 'Common Sense'},
+    { id: '3', name: 'Mathematics'},
+    { id: '4', name: 'Physics'},
+    
+];
+
+const MOCK_EXPERIENCE = [
+    {
+        id: '1',
+        role: 'Napster',
+        company: 'Bed ',
+        period: '11:00 PM to  11:00 AM  Everyday',
+        description: '[Officially in charge of testing gravity on desks, perfecting the art of fake snoring, and providing comic relief during boring lectures. Can fall asleep anywhere, anytime, and with maximum dramatic effect.]'
+    },
+];
+
+export const getProfile = () => {
+    console.log("Fetching profile data...");
+    return sleep(MOCK_PROFILE);
+};
+
+export const getGalleryImages = () => {
+    console.log("Fetching gallery images...");
+    return sleep(MOCK_GALLERY_IMAGES);
+};
+
+export const getProjects = () => {
+    console.log("Fetching projects...");
+    return sleep(MOCK_PROJECTS);
+};
+
+export const getSkills = () => {
+    console.log("Fetching skills...");
+    return sleep(MOCK_SKILLS);
+};
+
+export const getExperience = () => {
+    console.log("Fetching experience...");
+    return sleep(MOCK_EXPERIENCE);
+};
+
+export const submitContactForm = (data) => {
+    console.log("Submitting contact form:", data);
+    // In a real app, this would be a POST request to the backend to store the message.
+    return sleep({ success: true }, 1000);
+}
