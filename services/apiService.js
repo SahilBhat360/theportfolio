@@ -49,8 +49,7 @@ const MOCK_PROJECTS = [
 const MOCK_SKILLS = [
     { id: '1', name: 'Multitasking' },
     { id: '2', name: 'Problem Solving'},
-    { id: '3', name: 'Mathematics'},
-    { id: '4', name: 'Physics'},
+    
     
 ];
 
