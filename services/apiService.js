@@ -49,13 +49,7 @@ const MOCK_SKILLS = [
 ];
 
 const MOCK_EXPERIENCE = [
-    {
-        id: '1',
-        role: 'Napster',
-        company: 'Bed ',
-        period: '11:00 PM to  11:00 AM  Everyday',
-        description: '[Officially in charge of testing gravity on desks, perfecting the art of fake snoring, and providing comic relief during boring lectures. Can fall asleep anywhere, anytime, and with maximum dramatic effect.]'
-    },
+    
 ];
 
 export const getProfile = () => {
