@@ -32,7 +32,7 @@ id: '5', url: 'https://ik.imagekit.io/d58le6owhr/IMG_20210125_165753.jpg?updated
 id: '6', url: 'https://ik.imagekit.io/d58le6owhr/IMG_20250720_162711103_HDR_AE.jpg?updatedAt=1761280373658',alt:''},{
 id: '7', url: 'https://ik.imagekit.io/d58le6owhr/IMG_20251011_200945079_HDR.jpg?updatedAt=1761280351895',alt:''},{
 id: '8', url: 'https://ik.imagekit.io/d58le6owhr/IMG_20251011_200649326_HDR.jpg?updatedAt=1761280361015', alt:''},{
-id: '9', url: 'https://iili.io/KgV1Nbj.jpg',alt'',}
+id: '9', url: 'https://iili.io/KgV1Nbj.jpg',alt''}
 ];
 
 const MOCK_PROJECTS = [
