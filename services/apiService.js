@@ -10,7 +10,7 @@ const sleep = (data, delay = 500) => {
 // The content is easily updatable here, simulating a backend API/JSON file.
 const MOCK_PROFILE = {
     name: "Mohammad Sahil Bhat",
-    bio: "Aspiring developer and Electrical Engineering student at IIT ISM Dhanbad,",
+    bio: "A spiring developer and Electrical Engineering student at IIT ISM Dhanbad,",
     profilePictureUrl: "https://ik.imagekit.io/d58le6owhr/IMG_20251020_212511436_AE~2.jpg?updatedAt=1761237097766",
     headerImageUrl: "https://iili.io/KgLGxup.jpg",
 };
