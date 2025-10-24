@@ -14,11 +14,23 @@ const Footer = () => {
                 React.createElement(
                     'div',
                     { className: "flex space-x-6 mb-4 md:mb-0" },
-                    SOCIAL_LINKS.map(link => React.createElement(
-                        'a',
-                        { key: link.name, href: link.url, target: "_blank", rel: "noopener noreferrer", className: "text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-teal-400 transition-colors" },
-                        React.createElement(link.icon, { className: "h-6 w-6" })
-                    ))
+                    SOCIAL_LINKS.map(link => {
+                        const isComingSoon = link.status === 'coming-soon';
+                        const props = {
+                            key: link.name,
+                            href: link.url,
+                            target: isComingSoon ? undefined : "_blank",
+                            rel: isComingSoon ? undefined : "noopener noreferrer",
+                            className: isComingSoon
+                                ? "text-gray-400 dark:text-gray-500 cursor-not-allowed opacity-50 transition-colors"
+                                : "text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-teal-400 transition-colors",
+                            title: isComingSoon ? "Coming Soon!" : link.name,
+                            onClick: isComingSoon ? (e) => e.preventDefault() : undefined
+                        };
+                        return React.createElement('a', props,
+                            React.createElement(link.icon, { className: "h-6 w-6" })
+                        );
+                    })
                 ),
                 React.createElement(
                     'p',

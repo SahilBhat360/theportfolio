@@ -10,8 +10,9 @@ const sleep = (data, delay = 500) => {
 // The content is easily updatable here, simulating a backend API/JSON file.
 const MOCK_PROFILE = {
     name: "Mohammad Sahil Bhat",
-    bio: "I am a student of Electrical Engineering at IIT ISM Dhanbad.",
+    bio: "Aspiring developer and Electrical Engineering student at IIT ISM Dhanbad,",
     profilePictureUrl: "https://ik.imagekit.io/d58le6owhr/IMG_20251020_212511436_AE~2.jpg?updatedAt=1761237097766",
+    headerImageUrl: "https://iili.io/KgLGxup.jpg",
 };
 
 // As requested, no default photos are added. The backend can populate this array.
@@ -32,8 +33,7 @@ id: '5', url: 'https://ik.imagekit.io/d58le6owhr/IMG_20210125_165753.jpg?updated
 id: '6', url: 'https://ik.imagekit.io/d58le6owhr/IMG_20250720_162711103_HDR_AE.jpg?updatedAt=1761280373658',alt:''},{
 id: '7', url: 'https://ik.imagekit.io/d58le6owhr/IMG_20251011_200945079_HDR.jpg?updatedAt=1761280351895',alt:''},{
 id: '8', url: 'https://ik.imagekit.io/d58le6owhr/IMG_20251011_200649326_HDR.jpg?updatedAt=1761280361015', alt:''},{
-id: '9', url: 'https://iili.io/KgV1Nbj.jpg',alt:'',
-id: '10', url: 'https://iili.io/KghDM9R.jpg',alt:''}
+id: '9', url: 'https://iili.io/KghDM9R.jpg',alt:''}
 ];
 
 const MOCK_PROJECTS = [

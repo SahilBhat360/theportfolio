@@ -92,11 +92,23 @@ const Header = ({ theme, toggleTheme }) => {
                             )
                         ),
                         React.createElement('div', { className: "flex items-center space-x-4" },
-                            SOCIAL_LINKS.map(link =>
-                                React.createElement('a', { key: link.name, href: link.url, target: "_blank", rel: "noopener noreferrer", className: "text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-teal-400 transition-colors" },
+                            SOCIAL_LINKS.map(link => {
+                                const isComingSoon = link.status === 'coming-soon';
+                                const props = {
+                                    key: link.name,
+                                    href: link.url,
+                                    target: isComingSoon ? undefined : "_blank",
+                                    rel: isComingSoon ? undefined : "noopener noreferrer",
+                                    className: isComingSoon
+                                        ? "text-gray-400 dark:text-gray-500 cursor-not-allowed opacity-50 transition-colors"
+                                        : "text-gray-500 dark:text-gray-400 hover:text-primary-500 dark:hover:text-teal-400 transition-colors",
+                                    title: isComingSoon ? "Coming Soon!" : link.name,
+                                    onClick: isComingSoon ? (e) => e.preventDefault() : undefined
+                                };
+                                return React.createElement('a', props,
                                     React.createElement(link.icon, { className: "h-5 w-5" })
-                                )
-                            ),
+                                );
+                            }),
                             React.createElement('button', { onClick: toggleTheme, className: "p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors" },
                                 theme === 'dark' ? React.createElement(SunIcon, { className: "w-5 h-5" }) : React.createElement(MoonIcon, { className: "w-5 h-5" })
                             )
