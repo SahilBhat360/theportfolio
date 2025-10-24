@@ -39,7 +39,7 @@ const MOCK_PROJECTS = [
         id: '1',
         title: 'Cleaning My Room ',
         description: 'It takes me 1 Hour straight to clean my hostel room ',
-        imageUrl: 'https://insufficient-harlequin-3qt85ujchp.edgeone.app/bed.jpg',
+        imageUrl: 'https://drive.google.com/file/d/1aNDd9p3ROfT3myXT0m35MAlgqzW255Gw/view?usp=sharing',
     },
     
     // Add more projects here as needed by editing this "backend" file.
