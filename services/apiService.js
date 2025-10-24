@@ -26,7 +26,12 @@ alt: ''},
 url: 'https://raw-coral-sdkhy7q3hc.edgeone.app/IMG_20251010_233308386_HDR.jpg',
 alt: ''},
 {id: '3',url: 'https://ready-cyan-l7bvwuwsud.edgeone.app/IMG_20251011_215442868_HDR.jpg',
-alt: ''},
+alt: ''},{
+id: '4', url: 'https://ik.imagekit.io/d58le6owhr/IMG_20250830_155138239_HDR_AE.jpg?updatedAt=1761280372147',alt:''},{
+id: '5', url: 'https://ik.imagekit.io/d58le6owhr/IMG_20210125_165753.jpg?updatedAt=1761238532739', alt:''},{
+id: '6', url: 'https://ik.imagekit.io/d58le6owhr/IMG_20250720_162711103_HDR_AE.jpg?updatedAt=1761280373658',alt:''},{
+id: '7', url: 'https://ik.imagekit.io/d58le6owhr/IMG_20251011_200945079_HDR.jpg?updatedAt=1761280351895',alt:''},{
+id: '8', url: 'https://ik.imagekit.io/d58le6owhr/IMG_20251011_200649326_HDR.jpg?updatedAt=1761280361015', alt:''}
 ];
 
 const MOCK_PROJECTS = [
