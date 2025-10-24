@@ -20,7 +20,7 @@ const MOCK_GALLERY_IMAGES = [
     // { id: '1', url: 'https://picsum.photos/seed/gallery1/800/600', alt: 'A beautiful landscape' },
        {
 id: '1',
-url: 'https://ik.imagekit.io/d58le6owhr/IMG_20250715_165752320_HDR_AE.jpg?updatedAt=1761238532878',
+url: 'https://iili.io/KgV1Nbj.jpg',
 alt: ''},
 {id: '2',
 url: 'https://iili.io/KgVYShN.jpg',
