@@ -37,12 +37,12 @@ id: '9', url: 'https://iili.io/KghDM9R.jpg',alt:''}
 ];
 
 const MOCK_PROJECTS = [
-    {
-        id: '1',
-        title: 'Room Cleaning ',
-        description: 'It takes me 1 Hour straight to clean my hostel room ',
-        imageUrl: 'https://ik.imagekit.io/d58le6owhr/bed.jpg?updatedAt=1761281403228',
-    },
+    //{
+        //id: '1',
+        //title: 'Room Cleaning ',
+        //description: 'It takes me 1 Hour straight to clean my hostel room ',
+       // imageUrl: 'https://ik.imagekit.io/d58le6owhr/bed.jpg?updatedAt=1761281403228',
+    //},
     
     // Add more projects here as needed by editing this "backend" file.
 ];
